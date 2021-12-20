@@ -12,7 +12,7 @@ moment
 
 //START SPLIT THE NOTA
 
-FUNCTION named calculate split
+FUNCTION named calculateSplit
    OUTPUT Summa
       INPUT sum of food and bevereges
    OUTPUT Antal vänner
@@ -33,3 +33,9 @@ FUNCTION named calculate split
       IF input field is left empty
          THEN OUTPUT 'You missed something'
       ELSE OUTPUT Varje person ska betala 'sum of CALCULATE'
+
+ENDFUNCTION
+
+CALL FUNCTION named calculateSplit
+
+
